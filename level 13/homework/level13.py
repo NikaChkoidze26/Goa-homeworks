@@ -8,3 +8,15 @@ print(60 < 70)
 print(323 < 324)
 print(100 > 99)
 print(230 > 200)
+
+print(True or False)
+print(False or True)
+print(True or True)
+print(False or False)
+
+
+print(True and False)
+print(False and True)
+print(False and False)
+print(True and True)
+
