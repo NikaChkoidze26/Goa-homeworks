@@ -1,8 +1,19 @@
-num = int(input("Enter a number: "))
+#ააგეთ პროგრამა, რომელიც მოსთხოვს მომხმარებელს, რომ შეიყვანეს რიცხვი 1 - 100 მდე.
+#პროგრამის დანიშნულება არის ის, რომგამოიცნოს მომხმარებლის მიერ შემოტანილი რიცხვი, იმდენჯერ მიეცეს გამოცნობის შესაძლებლობა სანამ საბოლოოდ არ გამოიცნობს. 
 
-if num == 52:
-    print("Correct!")
+
+
+
+num = 64
+
+num1 = int(input("Enter a number 1 to 100: "))
+while num != num1:
+    num1 = int(input("Enter a number 1 to 100: "))
+    
+
+if num1 == num:
+    print('Correct!')
 
 else:
-    print("Incorrect!")
-    int(input("Try again: "))
+    print('Incorrect!')
+
