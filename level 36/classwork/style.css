@@ -1,0 +1,65 @@
+.idk {
+    text-transform: lowercase;
+}
+
+
+.idk2 {
+    text-transform: uppercase;
+}
+
+.idk3 {
+    text-transform: capitalize;
+}
+
+.idk4 {
+    text-transform: none;
+}
+
+p{
+    text-decoration: overline;
+}
+
+.p1{
+    text-decoration: underline;
+}
+
+.p2{
+    text-decoration: double;
+}
+
+.p3{
+    text-decoration: dotted;
+}
+
+h2{
+    text-shadow: 3px 3px 3px blue;
+}
+
+.h21{
+    text-shadow: 15px 2px 6px red;
+}
+
+.h22{
+    text-shadow: 1px 1px 1px black;
+}
+
+.h23{
+    text-shadow: 17px 16px 2px tomato;
+}
+
+.h3{
+    text-align:center
+}
+
+.h31{
+    text-align: left;
+}
+
+.h32{
+    text-align: right;
+}
+
+.h33{
+    text-align: start;
+}
+
