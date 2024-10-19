@@ -1,0 +1,15 @@
+.table{
+    background-color: rgb(2, 102, 102);
+    border: rgb(22, 134, 134)
+}
+
+th{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+tr1{
+    background-color: rgb(253, 213, 159);
+}
