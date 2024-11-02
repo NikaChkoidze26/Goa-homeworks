@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+section {
+    padding: 80px 20px; /* Padding to avoid overlap with the fixed header */
+}
+
+.static-section {
+    position: static;
+}
+
+.relative-section {
+    position: relative;
+}
+
+.relative-section .static-box {
+    position: static;
+    top: -20px; /* Movement upwards */
+    left: -20px; /* Movement to the left */
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+.absolute-section {
+    position: relative; /* Parent for absolute positioning */
+}
+
+.absolute-section .absolute-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+.sticky-section {
+    position: relative; /* Parent for sticky positioning */
+}
+
+.sticky-section .sticky-element {
+    position: sticky;
+    top: 0;
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ccc;
+    text-align: center;
+    padding: 10px;
+}
