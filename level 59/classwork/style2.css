@@ -1,0 +1,19 @@
+div{
+    text-align: center;
+    font-family: cursive;
+    height: 30px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: aqua;
+    animation-name: animm;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animm {
+
+
+
+    }

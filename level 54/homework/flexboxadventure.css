@@ -1,0 +1,197 @@
+/* level 1
+#field {
+    display: flex;
+justify-content: center;
+}
+
+
+level 2
+#field {
+    display: flex;
+justify-content: flex-end;
+}
+
+
+level 3
+#field {
+    display: flex;
+justify-content: space-between
+}
+
+level 4
+#field {
+    display: flex;
+justify-content: space-around
+}
+
+
+level 5
+#field {
+    display: flex;
+justify-content: space-evenly
+}
+
+
+level 6
+#field {
+    display: flex;
+align-items: center;
+}
+
+
+level 7
+#field {
+    display: flex;
+align-items: flex-end;
+}
+
+
+level 8
+#field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+level 9
+#field {
+    display: flex;
+justify-content: space-between
+align-items: flex-end
+}
+
+level 10
+#field {
+    display: flex;
+flex-direction: column
+}
+
+
+level 11
+#field {
+    display: flex;
+flex-direction: row-reverse
+}
+
+
+level 12
+#field {
+    display: flex;
+flex-direction: column
+justify-content: flex-end
+}
+
+
+level 13
+#field {
+    display: flex;
+flex-direction: row-reverse
+align-items: center
+justify-content: center
+}
+
+
+level 14
+#field {
+    display: flex;
+}
+
+#arthur {
+order: 2
+}
+
+
+level 15
+#field {
+    display: flex;
+}
+
+#marilyn {
+align-self: center
+}
+
+
+level 16
+#field {
+    display: flex;
+}
+
+#haymitch {
+order: -1;
+align-self: flex-end
+}
+
+level 17
+#field {
+    display: flex;
+flex-direction: column-reverse
+justify-content: flex-end
+align-items: center
+
+}
+
+
+level 18
+#field {
+    display: flex;
+    justify-content: center;
+}
+
+#arthur {
+align-self: center;
+order: 2;
+
+}
+
+
+level 19
+#field {
+    display: flex;
+flex-wrap: wrap
+}
+
+level 20
+#field {
+    display: flex;
+    flex-wrap: wrap;
+align-content: center;
+}
+
+
+level 21
+#field {
+    display: flex;
+    flex-wrap: wrap;
+align-content: flex-end;
+justify-content: center;
+}
+
+level 22
+#field {
+    display: flex;
+flex-direction: column-reverse;
+justify-content: space-around;
+align-items: flex-end;
+}
+
+
+level 23
+#field {
+    display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+flex-wrap: wrap-reverse;
+align-content: center;
+}
+
+
+level 24
+#field {
+    display: flex;
+}
+
+#arthur {
+align-self:center
+order: 3;
+} */

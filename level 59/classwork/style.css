@@ -1,0 +1,26 @@
+div{
+    text-align: center;
+    font-family: cursive;
+    height: 30px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: aqua;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+    from { background-color: aqua;}
+    to { background-color: lightgreen;}
+
+    0% {width: 30px; }
+    30%{width: 40px; }
+    60%{width: 50p}
+    80%{width: 60px;}
+    100% {width: 70px; ;}
+
+        
+}
