@@ -1,0 +1,8 @@
+.btn{
+    color: red;
+    background-color: navy;
+}
+
+.btn:hover{
+    transform: rotate(145deg);
+}

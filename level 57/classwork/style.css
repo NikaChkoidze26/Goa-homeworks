@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.div1 {
+    background-color: red;
+}
+.div2 {
+    background-color: blue;
+}
+.div3 {
+    background-color: green;
+}
+.div4 {
+    background-color: yellow;
+}
+
+.square:hover {
+    transform: rotate(45deg) scale(1.2);  
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    transform: rotate(15deg); 
+    background-color: darkblue;
+    color: white;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2); 
+}

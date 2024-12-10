@@ -1,0 +1,45 @@
+:root {
+    --background-color: red;
+    --color: black;
+    --font-size: 24px;
+    --font-family: cursive,sans;
+    --box-shadow: 4px;
+    --border-radius: 3px;
+    --margin: 70px;
+    --padding: 0;
+    --align-items: center;
+    --width: 400px;
+    --height: 400px;
+    --display: flex;
+}
+
+.div1{
+    background-color: var(--background-color);
+    color: var(--color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+    padding: var(--padding);
+    align-items: var(--align-items);
+    width: var(--width);
+    height: var(--height);
+    display: var(--display);
+    
+}
+
+.btn{
+    background-color: var(--background-color);
+    color: var(--color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+    padding: var(--padding);
+    align-items: var(--align-items);
+    width: var(--width);
+    height: var(--height);
+    display: var(--display);
+}

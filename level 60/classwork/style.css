@@ -1,0 +1,51 @@
+.div1{
+    align-items: center;
+    background-color: burlywood;
+    color: navy;
+    height: 500px;
+    width: 500px;
+    font-family: cursive,sans;
+    font-size: 70px;
+}
+
+.div1:hover{
+    background-color: darkkhaki;
+    color: black;
+    transition-duration: 2s;
+    transform: rotate(220deg);
+    
+}
+
+.div2{
+    align-items: center;
+    background-color: navajowhite;
+    color: navy;
+    height: 50px;
+    width: 50px;
+    font-family: cursive,sans;
+    font-size: 10px;
+}
+
+.div2:hover{
+    transition-duration: 2s;
+    height: 150;
+    width: 150;
+}
+
+.div3{
+    align-items: center;
+    background-color: green;
+    color: navy;
+    height: 100px;
+    width: 100px;
+    font-family: cursive,sans;
+    font-size: 70px;
+}
+
+.div3:hover{
+    transform: rotate(20deg);
+    transition-duration: 2s;
+    color: aqua;
+}
+
+
