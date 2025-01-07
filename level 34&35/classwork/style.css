@@ -1,0 +1,80 @@
+.class-1 {
+    font-size: 32px;
+    color: #3498db;
+    text-align: center;
+}
+
+.class-2 {
+    font-size: 18px;
+    color: #2ecc71;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.class-3 {
+    font-size: 20px;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.class-4 {
+    font-size: 16px;
+    color: #9b59b6;
+    font-style: italic;
+}
+
+.class-5 {
+    font-size: 16px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.class-5:hover {
+    background-color: #2c3e50;
+}
+
+
+#id-1 {
+    font-size: 28px;
+    color: #f1c40f;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#id-2 {
+    font-size: 16px;
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 10px;
+}
+
+#id-3 {
+    font-size: 18px;
+    color: #1abc9c;
+    background-color: #f8f9f9;
+    padding: 15px;
+}
+
+#id-4 {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-decoration: underline;
+}
+
+#id-5 {
+    font-size: 16px;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#id-5:hover {
+    background-color: #e74c3c;
+}

@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTomou0_XVrwsIQ4rShokR_yfpBGH09FwRvA&s'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto;
+}

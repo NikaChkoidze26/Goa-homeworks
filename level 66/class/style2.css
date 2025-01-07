@@ -1,0 +1,70 @@
+:root {
+    --color: navy;
+    --background-color: brown;
+    --font-size: 15em;
+    --padding: 20px;
+    --display: flex;
+    --margin: 50px;
+    --position: relative;
+    --flex-direction: column;
+    --transform: none;
+    
+
+    --color2: red;
+    --background-color2: blue;
+    --font-size2: 20em;
+    --padding2: 50px;
+    --display2: flex;
+    --margin2: 10px;
+    --position2: static;
+    --flex-direction2: row;
+    --transform2: rotate(90deg);
+
+    --color3: cyan;
+    --background-color3: black;
+    --font-size3: 30em;
+    --padding3: 100x;
+    --display3: flex;
+    --margin3: 50px;
+    --position3: sticky;
+    --flex-direction3: column-reverse;
+    --transform3: rotate(180deg);
+
+}
+
+
+.div1{
+    color: var(--color);
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    padding: var(--padding);
+    display: var(--display);
+    margin: var(--margin);
+    position: var(--position);
+    flex-direction: var(--flex-direction);
+    transform: var(--transform);
+}
+
+.div2{
+    color: var(--color2);
+    background-color: var(--background-color2);
+    font-size: var(--font-size2);
+    padding: var(--padding2);
+    display: var(--display2);
+    margin: var(--margin2);
+    position: var(--position2);
+    flex-direction: var(--flex-direction2);
+    transform: var(--transform2);
+}
+
+.div3{
+    color: var(--color3);
+    background-color: var(--background-color3);
+    font-size: var(--font-size3);
+    padding: var(--padding3);
+    display: var(--display3);
+    margin: var(--margin3);
+    position: var(--position3);
+    flex-direction: var(--flex-direction3);
+    transform: var(--transform3);
+}
