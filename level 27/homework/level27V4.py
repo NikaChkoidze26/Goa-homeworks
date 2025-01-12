@@ -1,8 +1,5 @@
-
-numbers = [10, 20, 30, 40, 50]
-
-print(numbers[0] * numbers[1] * numbers[2] * numbers[3] * numbers[4])
-
-
-
-
+numbers = [1, 2, 3, 4, 5]
+product = 1
+for num in numbers:
+    product = num
+print(product)
