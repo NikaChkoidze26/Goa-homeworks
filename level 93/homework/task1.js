@@ -1,19 +1,24 @@
-function comprehensiveArrayTask(arr1, arr2, arr3) {
-    let mergedArray = arr1.concat(arr2);
+let arr1 = ["Orange","Watermelon","Strawberry","Melon","Apple"]
 
-    mergedArray.copyWithin(5, 0, 3);
+let arr2 = ["Potato","Tomato","Cucumber","Carrot"]
 
-    mergedArray.fill(0, 6);
+let arr3 = ["Giorgi","Goga","Luka","Nika","Mate"]
 
-    mergedArray.pop();
+let mergedArray = [...arr1,...arr2]
 
-    mergedArray.shift();
+mergedArray.copyWithin(0,2,4)
 
-    mergedArray.unshift(100, 200);
+mergedArray.fill("0",6)
 
-    mergedArray.splice(2, 2, ...arr3);
+mergedArray.pop()
 
-    let slicedArray = mergedArray.slice(-5);
+mergedArray.shift()
 
-    return slicedArray.join(",");
-}
+mergedArray.unshift(100,200)
+
+mergedArray.splice(2,2,...arr3)
+
+let slicedArray = mergedArray.slice(7,12)
+
+
+console.log(slicedArray.join("-"))
