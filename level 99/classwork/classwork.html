@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fruit-container">
+        <ul id="fruit-list">
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Cherry</li>
+        </ul>
+      </div>
+    
+      
+
+
+      <script>
+        const fruitList = document.getElementById('fruit-list');
+
+        const newItem = document.createElement('li');
+        newItem.textContent = 'Orange';
+
+        fruitList.insertBefore(newItem, fruitList.firstElementChild);
+
+        fruitList.removeChild(fruitList.lastElementChild);
+
+        console.log(fruitList.firstElementChild.textContent);
+
+        console.log(fruitList.children[1].parentElement.textContent);
+
+      </script>
+</body>
+</html>
