@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Elements Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="elementById">ეს არის ელემენტი ID-ით</div>
+  <div class="elementByClass">ეს არის ელემენტი კლასთან ერთად</div>
+  <div>ეს არის ჩვეულებრივი ელემენტი</div>
+
+  <script>
+    //ID
+    const elementById = document.getElementById('elementById');
+    elementById.style.color = 'white';
+    elementById.style.backgroundColor = 'teal';
+    elementById.style.fontSize = '20px';
+    elementById.style.fontStyle = 'italic';
+    elementById.innerHTML = 'წარმატებით შეცვლილი ID ელემენტი!';
+
+    //class
+    const elementByClass = document.getElementsByClassName('elementByClass')[0];
+    elementByClass.style.color = 'navy';
+    elementByClass.style.backgroundColor = 'lightgray';
+    elementByClass.style.fontSize = '18px';
+    elementByClass.style.fontWeight = 'bold';
+    elementByClass.innerHTML = 'კლასის მქონე ელემენტი შეიცვალა!';
+
+    //tag
+    const allDivs = document.getElementsByTagName('div');
+    const thirdElement = allDivs[2];
+    thirdElement.style.color = 'darkgreen';
+    thirdElement.style.backgroundColor = 'beige';
+    thirdElement.style.fontSize = '16px';
+    thirdElement.style.textDecoration = 'underline';
+    thirdElement.innerHTML = 'ჩვეულებრივი ელემენტიც განახლდა!';
+  </script>
+
+</body>
+</html>

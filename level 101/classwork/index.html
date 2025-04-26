@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <style>
+        .div {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        .increase {
+            width: 200px;
+            height: 200px;
+        }
+
+        .decrease {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>increase size</h2>
+    <button id="increaseBtn">increase</button>
+
+    <h2>decrease size</h2>
+    <button id="decreaseBtn">decrease</button>
+
+    <div id="div" class="div"></div>
+
+    <script>
+        let box = document.getElementById('div');
+        let increaseBtn = document.getElementById('increaseBtn');
+        let decreaseBtn = document.getElementById('decreaseBtn');
+
+        increaseBtn.onclick = function() {
+            box.classList.remove('increase');
+            box.classList.add('decrease');
+        };
+
+        decreaseBtn.onclick = function() {
+            box.classList.remove('increase');
+            box.classList.add('decrease');
+        };
+    </script>
+
+</body>
+</html>
