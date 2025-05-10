@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <h2>My List</h2>
+  <ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li id="special">Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <script>
+    let list = document.getElementById('myList');
+
+    // 1
+    let newItem = document.createElement('li');
+    newItem.textContent = 'Item 5';
+    list.appendChild(newItem);
+
+    // 2
+    let firstItem = list.querySelector('li');
+    if (firstItem) {
+      list.removeChild(firstItem);
+    }
+
+    //3
+    let specialItem = document.getElementById('special');
+    if (specialItem) {
+      specialItem.textContent = 'Item 3';
+    }
+  </script>
+</body>
+</html>

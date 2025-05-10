@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>classList Tasks</title>
+  <style>
+    .highlight { background-color: yellow; }
+    .active { background-color: lightgreen; }
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+  </style>
+</head>
+<body>
+
+  <!-- 1  2-->
+  <div id="myDiv">My Div</div>
+
+    <!--3-->
+  <button id="toggleButton">Toggle Active</button>
+  <div id="targetDiv">Target Div</div>
+
+  <!--4-->
+  <p id="checkParagraph" class="important">Important Paragraph</p>
+
+  <!--5-->
+  <div id="replaceDiv" class="red">Replace Div</div>
+
+  <!--6-->
+  <div id="itemDiv" class="class1 class2 class3">Item Div</div>
+
+  <script>
+    // 1
+    let myDiv = document.getElementById('myDiv');
+    myDiv.classList.add('highlight');
+
+    // 2
+    myDiv.classList.remove('highlight');
+
+    // 3
+    let toggleButton = document.getElementById('toggleButton');
+    let targetDiv = document.getElementById('targetDiv');
+
+    toggleButton.addEventListener('click', () => {
+      targetDiv.classList.toggle('active');
+    });
+
+    // 4
+    let checkParagraph = document.getElementById('checkParagraph');
+    let hasImportantClass = checkParagraph.classList.contains('important');
+    console.log('Has "important" class:', hasImportantClass); 
+
+    // 5
+    let replaceDiv = document.getElementById('replaceDiv');
+    replaceDiv.classList.replace('red', 'blue');
+
+    // 6
+    let itemDiv = document.getElementById('itemDiv');
+    console.log('Second class of itemDiv:', itemDiv.classList.item(1)); 
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDK</title>
+</head>
+<body>
+
+    <!--4-->
+    <div id="styledDiv">This is a styled div</div>
+
+    <!--5-->
+    <li>item</li>
+
+    <!--6-->
+    <ul id="removableList">
+        <li>Item 1</li>
+        <li>Item 2 (to be removed)</li>
+        <li>Item 3</li>
+      </ul>
+<script>
+    //4
+  let div = document.getElementById('styledDiv');
+  div.style.backgroundColor = 'lightblue';
+  div.style.color = 'darkblue';
+
+    //5
+  let ul = document.getElementById('myList');
+  let newItem = document.createElement('li');
+  newItem.textContent = 'New list item';
+  ul.appendChild(newItem);
+
+    //6
+    let list = document.getElementById('removableList');
+    let secondItem = list.getElementsByTagName('li')[1];
+        if (secondItem) {
+    list.removeChild(secondItem);
+  }
+</script>
+
+
+
+</body>
+</html>
