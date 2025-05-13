@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>5. ტექსტის დამალვა/გამოჩენა</h3>
+    <button onclick="toggleText()">ტექსტის გამოჩენა/დამალვა</button>
+    <p id="myText">ეს არის ტექსტი.</p>
+
+    <script>
+        function toggleText() {
+        const text = document.getElementById('myText');
+        text.style.display = text.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>

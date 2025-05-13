@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <button onclick="showImage(1)">სურათი 1</button>
+  <button onclick="showImage(2)">სურათი 2</button>
+  <button onclick="showImage(3)">სურათი 3</button>
+
+  <div id="imageContainer">
+    <img id="displayedImage" src="https://images.musicstore.de/images/0960/rockson-st-electric-guitar-black_1_GIT0050069-000.jpg" alt="სურათი">
+  </div>
+
+  <script>
+    function showImage(imageNumber) {
+      let imageUrl = "";
+      switch(imageNumber) {
+        case 1:
+          imageUrl = "https://guildguitars.com/wp-content/uploads/2024/10/Surfliner-Deluxe_Scarlett-Red-Metallic_side.jpg";
+          break;
+        case 2:
+          imageUrl = "https://www.guitarworldonline.com.au/wp-content/uploads/2024/08/sanchez-34-size-student-classical-guitar-koa-sc-36-koa-australia-copy.jpg";
+          break;
+        case 3:
+          imageUrl = "https://cdn.connectsites.net/user_files/esp/product_images/000/035/887/original.png?1719245363";
+          break;
+      }
+      document.getElementById("displayedImage").src = imageUrl;
+    }
+  </script>
+
+</body>
+</html>

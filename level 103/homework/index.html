@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s">
+</head>
+<body>
+    <h3>3. ფერის შეცვლა</h3>
+    <button onclick="changeColor()">ფონის შეცვლა</button>
+    <div id="colorBox" style="width:200px; height:100px; background-color:lightgray; margin-top:10px;"></div>
+
+<script>
+    function changeColor() {
+        const colors = ['red', 'green', 'blue', 'orange', 'purple', 'yellow'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.getElementById('colorBox').style.backgroundColor = randomColor;
+}
+</script>
+
+</body>
+</html>
