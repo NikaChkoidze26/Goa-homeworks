@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build It from Nothing</title>
+  <style>
+    .dynamic-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightgreen;
+      border: 2px solid green;
+      padding: 10px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    const newBox = document.createElement("div");
+
+    newBox.classList.add("dynamic-box");
+
+    newBox.textContent = "I'm alive!";
+
+    document.body.appendChild(newBox);
+  </script>
+
+</body>
+</html>

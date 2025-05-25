@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clone Army</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: lightgray;
+      display: inline-block;
+    }
+
+    .highlighted {
+      border: 3px solid orange;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <script>
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+      box.classList.add("highlighted");
+    });
+  </script>
+
+</body>
+</html>

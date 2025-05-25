@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tag Hunter</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ul>
+
+  <p id="count"></p>
+
+  <script>
+    const listItems = document.getElementsByTagName("li");
+
+    document.getElementById("count").textContent = `Number of <li> items: ${listItems.length}`;
+
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].style.border = "2px solid blue";
+      listItems[i].style.padding = "5px";
+      listItems[i].style.marginBottom = "4px";
+    }
+  </script>
+
+</body>
+</html>
