@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+
+  <h1 id="title">hello world!</h1>
+  <p class="text">ეს არის p1.</p>
+  <p class="text">ეს არის p2.</p>
+  <button id="changeText">change text</button>
+
+  <script>
+    const title = document.getElementById("title");
+
+    const paragraphs = document.getElementsByClassName("text");
+
+    const allParagraphs = document.getElementsByTagName("p");
+
+    const firstParagraph = document.querySelector(".text");
+
+    const allTextParagraphs = document.querySelectorAll(".text");
+
+    const button = document.getElementById("changeText");
+    button.addEventListener("click", () => {
+      title.textContent = "ტექსტი შეიცვალა!";
+    });
+  </script>
+
+</body>
+</html>
