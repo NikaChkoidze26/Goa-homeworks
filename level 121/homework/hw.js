@@ -1,14 +1,14 @@
 // 1
-let Dog {
-    constructor(name) {
-      this.name = name; 
-    }
-  
-    // 2
-    bark() {
-      console.log("Woof");
-    }
+class Dog {
+  constructor(name) {
+    this.name = name;
   }
+}
+
+  //2
+function bark() {
+  console.log("Woof");
+}
   
   // 3
   let myDog = new Dog("Max");
