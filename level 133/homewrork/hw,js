@@ -1,0 +1,77 @@
+// 1
+const p1 = new Promise((resolve) => {
+  resolve({ status: "ok", code: 200 });
+});
+p1.then(obj => console.log("1:", obj));
+
+// 2
+const p2 = new Promise((_, reject) => {
+  reject(new Error("Custom failure!"));
+});
+p2.catch(err => console.error("2:", err.message));
+
+// 3
+function delay(ms) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`Waited ${ms} ms`);
+    }, ms);
+  });
+}
+delay(500).then(msg => console.log("3:", msg));
+
+// 4
+const p4 = new Promise((resolve, reject) => {
+  const success = Math.random() > 0.5;
+  success ? resolve("✅ Success") : reject("Failure");
+});
+p4.then(res => console.log("4:", res))
+  .catch(err => console.error("4:", err));
+
+// 5
+const p5 = new Promise((resolve) => resolve(3));
+p5.then(n => n + 2)      
+  .then(n => n * 4)      
+  .then(n => n - 5)      
+  .then(n => console.log("5: Final result:", n));
+
+// 6
+function fetchUser(id) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(`User ${id} data`), 1500);
+  });
+}
+fetchUser(7).then(data => console.log("6:", data));
+
+// 7
+const p7 = new Promise((resolve, reject) => {
+  Math.random() > 0.5 ? resolve("Everything fine") : reject("Something went wrong");
+});
+p7.then(res => console.log("7:", res))
+  .catch(err => console.error("7:", err))
+  .finally(() => console.log("7: Cleanup complete"));
+
+// 8
+const nestedPromise = new Promise((resolve) => {
+  resolve(new Promise((resolveInner) => {
+    setTimeout(() => resolveInner("Nested resolved!"), 500);
+  }));
+});
+nestedPromise.then(result => console.log("8:", result));
+
+// 9                    
+function wait(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+wait(1000).then(() => console.log("9: Wait finished after 1000 ms"));
+
+// 10
+const pA = new Promise((resolve) => setTimeout(() => resolve("One"), 1000));
+const pB = new Promise((resolve) => setTimeout(() => resolve("Two"), 2000));
+const pC = new Promise((resolve) => setTimeout(() => resolve("Three"), 3000));
+
+Promise.all([pA, pB, pC]).then(results => console.log("10:", results));
+
+console.log("All promises created — wait for async outputs...");

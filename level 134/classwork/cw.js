@@ -1,4 +1,3 @@
-// 5 Promise-ი, ზოგი წარმატებით სრულდება, ზოგი უარყოფით
 const p1 = new Promise((resolve) => setTimeout(() => resolve("P1 დასრულდა"), 1000));
 const p2 = new Promise((resolve) => setTimeout(() => resolve("P2 დასრულდა"), 500));
 const p3 = new Promise((_, reject) => setTimeout(() => reject("P3 შეცდომა"), 800));

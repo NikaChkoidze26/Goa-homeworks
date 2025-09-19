@@ -21,5 +21,4 @@ let Operatives2 = activeOperatives.map(op =>
 );
 
 console.log(Operatives2);
-
  
